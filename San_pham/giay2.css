@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+   
+  
+}
+
+.slideshow-container {
+    position: relative;
+    width: 350px;
+    margin-left: 200px;
+    margin-top: 30px;
+    height:350px;
+  }
+  
+  .slides {
+    display: flex;
+    width: 350px;
+    height:350px;
+  }
+  
+  .slides img {
+    width: 100%;
+    display: none;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+ .mua:hover{
+    background-color: aqua;
+ }
+
