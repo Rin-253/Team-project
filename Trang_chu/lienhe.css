@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Kiểu dáng cho cơ thể trang */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Kiểu dáng cho phần Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Kiểu dáng cho Logo */
+.logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Kiểu dáng cho nhóm các phần tử */
+.group {
+    display: flex;
+    align-items: center;
+}
+
+/* Kiểu dáng cho danh sách ul của Header */
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-right: 20px; /* Giảm margin để bố cục sạch sẽ hơn */
+}
+
+/* Kiểu dáng cho các liên kết a trong danh sách ul của Header */
+header ul li a {
+  text-decoration: none;
+  font-size: 0.8em;
+  margin-top: 20px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: flex;
+  align-items: center; /* Căn icon và văn bản cùng hàng */
+}
+
+/* Kiểu dáng cho icon trong các mục sản phẩm */
+header ul li a img {
+  width: 10px;
+  margin-left: 5px; /* Khoảng cách giữa văn bản và icon */
+}
+/* Kiểu dáng cho thanh menu */
+.menuToggle {
+    display: none;
+    cursor: pointer;
+    margin-left: 20px; /* Giảm margin để bố cục sạch sẽ hơn */
+}
+
+/* Kiểu dáng cho submenu */
+.submenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 11px;
+    
+    width: 7.5%;
+padding: 10px;
+    margin-left: -12px;
+}
+
+
+/* Hiển thị submenu khi mở */
+.submenu.show {
+    display: block;
+}
+
+/* Kiểu dáng cho thanh tìm kiếm */
+.searchBox {
+position: relative;
+top: 120px; /* Điều chỉnh vị trí dưới menu */
+left: 50%; /* Căn giữa màn hình */
+transform: translateX(-50%);
+width: 50%;
+max-width: 400px; /* Đảm bảo thanh tìm kiếm không quá rộng */
+border-radius: 5px;
+display: flex;
+background: #ffffff;
+padding: 10px;
+border: 0px solid #ccc;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+position: relative;
+width: 500px; /* Điều chỉnh kích thước thanh tìm kiếm tùy thuộc vào nhu cầu của bạn */
+}
+
+.searchBox input[type="text"] {
+/* Phần input chiếm phần lớn width */
+border: none;
+padding: 8px;
+width: calc(100% - 30px); /* Tính toán chiều rộng của input để phù hợp với hình ảnh tìm kiếm */
+padding-right: 40px; /* Để tránh chồng lên hình ảnh tìm kiếm */
+outline: none;
+}
+
+.searchBox button {
+border: none;
+background: transparent;
+padding: 8px;
+cursor: pointer;
+}
+ .searchBox img {
+    position: absolute;
+    right: 5px; /* Điều chỉnh khoảng cách từ hình ảnh tìm kiếm đến mép phải của thanh tìm kiếm */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Điều chỉnh kích thước của hình ảnh tìm kiếm */
+    height: 20px;
+}
+
+/*liên hệ*/
+
+.lienhe {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top:200px ;
+    border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .lienhe h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .lienhe label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .lienhe input[type="text"],
+  .lienhe input[type="email"],
+  .lienhe textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+ }
+
+  .lienhe textarea {
+    resize: vertical;
+}
+
+.lienhe input[type="submit"] {
+   width: 30%;
+   padding: 5px;
+   background-color: #771008;
+   color: white;
+    border: none;
+    border-radius: 5px;
+   margin-left: 35%;
+   
+   
+ }
+ h3{
+  margin-top: -10px;
+  text-align: center;
+ }
+ img{
+  width: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+.container_footer1 {
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #cac5c5;
+  }
+  
+  .text_footer1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .contact_info{
+    margin-top: 3%;
+    margin-left: 20%;
+  }
+  .contact_info strong {
+    font-weight: bold;
+    margin-right: 5px;
+   
+  }
+  
+  .container_footer2 {
+    padding: 30px;
+  
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: #af8282;
+  }
+  
+
+  @media (max-width: 800px) {
+    /* Hiển thị thanh menu khi kích thước màn hình nhỏ */
+    .menuToggle {
+        display: block;
+    }
+
+    /* Kiểu dáng điều hướng menu */
+    header .navigation {
+        display: none;
+        flex-direction: column;
+        background: #fffcfc;
+        width: 70%;
+        height: calc(100vh - 20px); /* 80px là chiều cao của header */
+        position: absolute;
+        top: 80px; /* Header có chiều cao 80px, nên thanh menu sẽ chèn lên sau header */
+        right: 0;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        overflow-y: auto; /* Nếu menu quá dài, sẽ xuất hiện thanh cuộn */
+        z-index: 1000; /* Đảm bảo thanh menu luôn hiển thị trên các phần tử khác */
+    }
+
+    /* Hiển thị menu khi header được mở */
+    header.open .navigation {
+        display: flex;
+    }
+
+    /* Điều chỉnh kích thước font cho các liên kết trong menu khi header được mở */
+    header.open .navigation li a {
+        font-size: 0.5em;
+    }
+
+
+     
+      .searchBox {
+          top: 90px; /* Điều chỉnh vị trí dưới menu */
+          width: 240px;
+      }
+      .khungbanner{
+          display: flex;
+      }
+      .lienhe{
+        margin-top: 200px;
+      }
+
+
+
+
+
+      .container_footer1 {
+        margin-top: 110px;
+      }
+      .container_footer2 {
+          top: 0;
+      }
+      .text_footer1{
+        padding: 20px;
+      }
+      .submenu{
+        text-align:center ;
+        width:96px;
+        
+       
+      }
+      
+
+
+
+  }
+
+
+
+
+
+
